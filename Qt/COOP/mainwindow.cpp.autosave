@@ -124,7 +124,14 @@ void MainWindow::on_actiongauss_G_triggered()
 
 void MainWindow::on_actioncanny_C_triggered()
 {
-
+    VideoCapture    Capture(0);
+    while(1)
+    {
+        Mat frame;
+        
+        Capture>>frame;
+        
+    }
 }
 
 void MainWindow::on_actioncamera_on_O_triggered()
